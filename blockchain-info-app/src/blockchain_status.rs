@@ -1,5 +1,5 @@
-#[derive((Deserialize, Debug))]
-#[serde(rename_all = "camelcase")]
+#[derive(Deserialize, Debug)]
+#[serde(rename_all = "camelCase")]
 pub struct Backend {
     pub chain: String,
     // blocks: i64,
@@ -12,8 +12,8 @@ pub struct Backend {
     // protocol_version: String
 }
 
-#[derive((Deserialize, Debug))]
-#[serde(rename_all = "camelcase")]
+#[derive(Deserialize, Debug)]
+#[serde(rename_all = "camelCase")]
 pub struct Blockbook {
     pub coin: String,
     // host: String,
@@ -33,8 +33,8 @@ pub struct Blockbook {
     // about: String
 }
 
-#[derive((Deserialize, Debug))]
-#[serde(rename_all = "camelcase")]
+#[derive(Deserialize, Debug)]
+#[serde(rename_all = "camelCase")]
 pub struct BlockchainStatus {
     pub blockbook: Blockbook,
     pub backend: Backend,
