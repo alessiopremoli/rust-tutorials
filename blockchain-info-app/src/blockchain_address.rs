@@ -11,5 +11,5 @@ pub struct BlockchainAddress {
     // unconfirmed_balance: String,
     // unconfirmed_txs: i64,
     // txs: i64,
-    pub txids: Vec<String>
+    pub txids: Vec<String> 
 }
